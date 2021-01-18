@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <title>Rishabh Singh</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">RxA</div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="ham">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="home">
+      <div class="main" id="home">
+        <div class="home__text">
+          <h3 class="greet">hello there!!</h3>
+          <h2 class="name">Er Rishabh Singh</h2>
+          <p class="work">
+              MERN Stack Developer, Enterprenure, Problem Solver
+          </p>
+        </div>
+        <div class="home__img">
+          <!-- <img src="./assets/atom.png" alt="" /> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+        <h2 class="heading"> <div class="left__line"></div> About <div class="right__line"></div></h2>
+        <p class="para">
+            Passionate about computer and webiste works, having exprience with MERN Stack makes me better choice to deliver services with perfection and on time,
+            apart from full stack web development i also deals with software engineering and have strong grasp on Data Structure and Algorithms and in C/C++ and Python for software development
+        </p>
+    </div>
+
+    <div class="projects" id="projects">
+        <h2 class="heading"><div class="left__line"></div>Projects <div class="right__line"></div></h2>
+        <div class="project__list">
+            <div class="project__item project1">
+                <h4>project1</h4>
+            </div>
+            <div class="project__item">
+                <img src="./assets/project2.jpg" alt="">
+            </div>
+            <div class="project__item">
+                <img src="./assets/project1.webp" alt="">
+            </div>
+            <div class="project__item">
+                <img src="./assets/project2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2 class="heading"><div class="left__line"></div>Contact <div class="right__line"></div></h2>
+        <div class="para icons">
+            <a href="mailto:rishmark98@gmail.com"><img src="./svg/ngmail.svg" alt="mail"></a>
+            <a href="https://instagram.com/rishthekingboy"><img src="./svg/instagram.svg" alt="instagram"></i></a>
+            <a href="https://linkedin/in/rishthekingboy"><img src="./svg/linkedin.svg" alt="linkedin" class="linkedin"></a>
+            <a href="https://github.com/rishthekingboy"><img src="./svg/github.svg" alt="github"></a>
+        </div>
+    </div>
+
+    <script>
+      const nav__list = document.querySelector(".nav__list");
+      const ham = document.querySelector(".ham");
+      ham.addEventListener("click", () => {
+        nav__list.classList.toggle("active__nav");
+      });
+    </script>
+  </body>
+</html>
